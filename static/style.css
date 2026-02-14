@@ -1,0 +1,59 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group { margin-bottom: 16px; }
+label { display: block; font-weight: 600; margin-bottom: 5px; font-size: 0.9rem; }
+input { width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 8px; box-sizing: border-box; }
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#progress-container {
+    margin-top: 25px;
+    display: none; /* Hidden until button click */
+}
+
+.progress-bar-bg {
+    background: #e2e8f0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    background: #3b82f6;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+#status {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 10px;
+}
