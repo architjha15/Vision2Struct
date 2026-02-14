@@ -136,21 +136,33 @@ Due to Gemini API billing restrictions:
 <pre>
 Vision2Struct/
 │
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
+├── downloads/              # Scraped images categorized by prompt
+│   ├── denim/
+│   ├── football/
+│   ├── jeans/
+│   ├── jersey/
+│   ├── mustang/
+│   ├── pants/
+│   └── tshirt/
 │
-├── backend/
-│   ├── main.py
-│   ├── scrapper.py
-│   └── analyzer.py
+├── static/                 # Frontend static files
+│   ├── script.js
+│   └── style.css
 │
-├── output/
-│   └── results.csv
+├── templates/              # HTML templates (Flask)
+│   └── index.html
 │
-└── .env
+├── app.py                  # Main Flask backend
+├── scraper.py              # Image scraping logic
+├── analyzer.py             # Gemini AI analysis logic
+│
+├── analysis_football.csv   # Example generated output
+├── requirements.txt
+├── .env
+├── .gitignore
+└── README.md
 </pre>
+
 
 <hr>
 
